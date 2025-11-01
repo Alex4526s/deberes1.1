@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
     $stmt->bind_param("i", $orden_id);
 
     if ($stmt->execute()) {
-        $_SESSION['mensaje'] = "✅ Orden eliminada correctamente.";
+        $_SESSION['mensaje'] = "✅ 1Orden eliminada correctamente.";
         $_SESSION['mensaje_tipo'] = "success";
     } else {
         $_SESSION['mensaje'] = "❌ Error al eliminar la orden.";
